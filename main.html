@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <body onclick="revealContent()">
+
+        <p id="initial-text" class="greet">Привет! Выбери как проведешь этот день!</p>
+    
+        <div id="content" class="hidden">
+            <p id="changing-text" style="font-size: 300%;
+            text-align: center;" onclick="revealGift()">Впереди важный день! Где проснешься?</p>
+            <div class="image-container">
+                <img id="images1" src="IMG_4239.JPG" onclick="changeContent()" ondblclick="changeText()" alt="Image 1">
+                <img id="images2" src="IMG_4241.JPG" onclick="changeContent()" alt="Image 2">
+                <img id="images3" src="IMG_4244.JPG" onclick="changeContent()" alt="Image 3">
+                <img id="images4" src="IMG_4247.JPG" onclick="changeContent()" alt="Image 4">
+            </div>
+        </div>
+
+        <div id="certificate" class="hidden">
+            <div class="single-image">
+         <img id="giftImage" src="IMG_4261(1).PNG" alt="gift" onclick="congratulation()">
+         </div></div>
+        <p id="happyB" class="hidden" style="font-size: 300%;
+        text-align: center;     font-family: Verdana, sans-serif; padding-left: 15%; padding-right: 15%;
+        ">С днем рождения! Забирай в приложении<3
+        С любовью Салта и Анель</p>
+
+        
+        
+    
+
+   <script src="script.js"></script>
+</body>
+</html>
